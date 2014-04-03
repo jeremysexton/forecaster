@@ -1,7 +1,5 @@
 #Forecaster
 
----
-
 A Statamic add-on to pull in weather information from [Forecast.io](http://forecast.io).
 
 ##About
