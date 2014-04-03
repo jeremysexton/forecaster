@@ -31,7 +31,6 @@ If this plugin changed your life and you insist on buying me a beer, [I'm not go
 	</ul>
 
 {{ /forecaster }}
-
 ```
 
 ##Documentation
