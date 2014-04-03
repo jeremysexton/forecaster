@@ -24,8 +24,8 @@ If this plugin changed your life and you insist on buying me a beer, [I'm not go
 	<p class="{{ icon }}">{{ summary }}</p>
 	
 	<ul>
-		<li>Temp: {{ temperature }}</li>
-		<li>Feels like: {{ apparentTemperature }}</li>
+		<li>Temp: {{ temperature }}&deg;</li>
+		<li>Feels like: {{ apparentTemperature }}&deg;</li>
 	</ul>
 
 {{ /forecaster }}
@@ -70,7 +70,7 @@ Statamic already conveniently uses latitude and longitude to store location fiel
 		<p>The weather for this event will be: {{ summary }}.</p>
 		
 		<ul>
-			<li>Temp: {{ temperature|round }}</li>
+			<li>Temp: {{ temperature|round }}&deg;</li>
 			<li>Humidity: {{ humidity|*:100 }}%</li>
 		</ul>
 		
