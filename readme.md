@@ -70,7 +70,7 @@ Statamic already conveniently uses latitude and longitude to store location fiel
 		<p>The weather for this event will be: {{ summary }}.</p>
 		
 		<ul>
-			<li>Temp: {{ temperature }}</li>
+			<li>Temp: {{ temperature|round }}</li>
 			<li>Humidity: {{ humidity|*:100 }}%</li>
 		</ul>
 		
@@ -105,7 +105,7 @@ Statamic already conveniently uses latitude and longitude to store location fiel
 * **nearestStormBearing** - "A numerical value representing the direction of the nearest storm in degrees, with true north at 0° and progressing clockwise."
 * **precipIntensity** - "A numerical value representing the average expected intensity (in inches of liquid water per hour) of precipitation occurring at the given time conditional on probability (that is, assuming any precipitation occurs at all). A very rough guide is that a value of 0 in./hr. corresponds to no precipitation, 0.002 in./hr. corresponds to very light precipitation, 0.017 in./hr. corresponds to light precipitation, 0.1 in./hr. corresponds to moderate precipitation, and 0.4 in./hr. corresponds to heavy precipitation."
 * **precipProbability** - "A numerical value between 0 and 1 (inclusive) representing the probability of precipitation occuring at the given time."
-* **temperature** - The temperature at the given date/time.
+* **temperature** - The temperature at the given date/time to 2 decimal points.
 * **apparentTemperature** - The "feels like" temperature.
 * **dewPoint** - "A numerical value representing the dew point at the given time in degrees." C or F, depending on your units setting.
 * **humidity** - "A numerical value between 0 and 1 (inclusive) representing the relative humidity."
