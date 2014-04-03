@@ -1,0 +1,30 @@
+#
+# Forecaster Settings
+#
+
+# API Key
+#
+# Enter Your API key from Forecast.io here.
+# If you do not have one, you can get one for free at http://developer.forecast.io
+         
+api_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# Default Location
+#
+# Forecaster will fall back to this location if one is not set in the tag pair.
+# Need help finding latitude and longitude for your neck of the woods? Try http://itouchmap.com/latlong.html
+
+default_lat: 44.832865
+
+default_long: -87.378731
+
+# Units
+#
+# Forecast will return results in the following unit types:
+#
+# us, si, ca, uk, auto
+#
+# Auto will use the location of the request to determine the units used.
+# For more information, visit the API documentation at https://developer.forecast.io/docs/v2
+
+default_units: auto
