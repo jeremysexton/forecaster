@@ -23,6 +23,9 @@ class Plugin_forecaster extends Plugin {
 		$date = strtotime($date);
 		$time = strtotime($time);
 		
+		$date = date('Y-m-d', $date);
+		$time = date('H:i:s', $time);
+		
 		if ($date != "") {
 					
 			$url = $api_start.$api_key."/".$lat.",".$long.",".$date."T".$time."?units=".$units."&exclude=daily,minutely,hourly,alerts,flags";
@@ -39,6 +42,36 @@ class Plugin_forecaster extends Plugin {
 		$results = $results["currently"];
 		
 		return $results;
+	
+	}
+	
+	public function url() {
+	
+		$api_key = $this->config["api_key"]; // Replace with your own Forecast API Key
+		$api_start = "https://api.forecast.io/forecast/";
+		$lat = $this->fetchParam('latitude', $this->config["default_lat"]);
+		$long = $this->fetchParam('longitude', $this->config["default_long"]);
+		$date = $this->fetchParam('date', null);
+		$time = $this->fetchParam('time', null);
+		$units = $this->fetchParam('units', $this->config["default_units"]);
+		
+		$date = strtotime($date);
+		$time = strtotime($time);
+		
+		$date = date('Y-m-d', $date);
+		$time = date('H:i:s', $time);
+		
+		if ($date != "") {
+					
+			$url = $api_start.$api_key."/".$lat.",".$long.",".$date."T".$time."?units=".$units."&exclude=daily,minutely,hourly,alerts,flags";
+			
+		} else {
+			
+			$url = $api_start.$api_key."/".$lat.",".$long."?units=".$units."&exclude=daily,minutely,hourly,alerts,flags";
+			
+		}
+						
+		return $url;
 	
 	}
 	

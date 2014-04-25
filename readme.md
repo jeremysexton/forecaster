@@ -65,7 +65,7 @@ Statamic already conveniently uses latitude and longitude to store location fiel
 
 	<h1>{{ title }}</h1>
 	
-	{{ forecaster latitude="{ place:latitude }" longitude="{ place:longitude }" date="{ date format="Y-m-d" }" time="{ time format="H:i:s }" }}
+	{{ forecaster latitude="{ place:latitude }" longitude="{ place:longitude }" date="{ date }" time="{ time }" }}
 		
 		<p>The weather for this event will be: {{ summary }}.</p>
 		
@@ -78,6 +78,7 @@ Statamic already conveniently uses latitude and longitude to store location fiel
 
 {{ /entries:listing }}
 ```
+And don't worry, you can leave the date and time formatting to Forecaster!
 
 ### Variables
 
