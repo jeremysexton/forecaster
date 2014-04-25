@@ -19,6 +19,9 @@ class Plugin_forecaster extends Plugin {
 		$date = $this->fetchParam('date', null);
 		$time = $this->fetchParam('time', null);
 		$units = $this->fetchParam('units', $this->config["default_units"]);
+
+		$date = strtotime($date);
+		$time = strtotime($time);
 		
 		if ($date != "") {
 					
