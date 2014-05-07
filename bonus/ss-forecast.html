@@ -1,0 +1,32 @@
+{{ if icon == "clear-day" }}
+	<i class="ss-icon ss-forecast yellow">sun</i>
+{{ elseif icon == "clear-night" }}
+	<i class="ss-icon ss-forecast">moon</i>
+{{ elseif icon == "rain" && precipIntensity < "0.4" }}
+	<i class="ss-icon ss-forecast">rain</i>
+{{ elseif icon == "rain" && precipIntensity >= "0.4" }}
+	<i class="ss-icon ss-forecast">heavyrain</i>
+{{ elseif icon == "snow" && precipIntensity < "0.4" }}
+	<i class="ss-icon ss-forecast">snow</i>
+{{ elseif icon == "snow" && precipIntensity >= "0.4" }}
+	<i class="ss-icon ss-forecast">heavysnow</i>			
+{{ elseif icon == "sleet" }}
+	<i class="ss-icon ss-forecast">sleet</i>
+{{ elseif icon == "wind" }}
+	<i class="ss-icon ss-forecast">wind</i>
+{{ elseif icon == "fog" }}
+	<i class="ss-icon ss-forecast">haze</i>
+{{ elseif icon == "cloudy" }}
+	<i class="ss-icon ss-forecast">cloudy</i>
+{{ elseif icon == "partly-cloudy-day" }}
+	<i class="ss-icon ss-forecast">cloudyday</i>
+{{ elseif icon == "partly-cloudy-night" }}
+	<i class="ss-icon ss-forecast">cloudynight</i>
+{{ elseif icon == "hail" }}
+	<i class="ss-icon ss-forecast">hail</i>
+{{ elseif icon == "thunderstorm" }}
+	<i class="ss-icon ss-forecast">thunderstorm</i>
+{{ elseif icon == "tornado" }}
+	<i class="ss-icon ss-forecast">tornado</i>
+{{ endif }}
+	</i>

@@ -10,6 +10,16 @@ Just upload the folders into the proper locations, set your API key and your def
 
 Say you just want your local weather on your site, you can do that. If you want the weather for events that are coming up listed with the events, you can do that. If you want to keep tabs on the ozone over your office and display that boldly on your homepage, rock on you little weirdo, you.
 
+##Bonus!
+
+I've added a folder called "Bonus" that contains a partial ready to go if you're using [SS Forecast](https://symbolset.com/icons/forecast) from the folks at [Symbolset](https://symbolset.com) to power your weather icons.
+
+To use it, place the .html file in your theme's "partials" folder add the following code inside the forecaster tags:
+
+```
+{{ theme:partial src="ss-forecast" use_context="true" }}
+```
+
 ##Support, etc
 
 Troll me on the tweets at [@jeremysexton](http://twitter.com/jeremysexton) or shoot me an email jeremy(at)jeremysexton.net.
